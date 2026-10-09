@@ -8,7 +8,7 @@ function Listelectronics() {
 
 
     const [name, setName] = useState([])
-    const [search, setSearch] = useState([])
+    const [search, setSearch] = useState('')
 
     function fetchPosts() {
         axios.get('https://worksheet-catalogue.mashupstack.com/products').then(response => {
